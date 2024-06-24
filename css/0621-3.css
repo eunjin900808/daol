@@ -45,6 +45,7 @@
     background: url(../images/mainslide1.jpg) no-repeat center top;
     border-bottom: 1px solid #ddd;
     position: fixed;
+    z-index: 500;
 }
 
 .head_opa{
@@ -206,9 +207,6 @@
     float: right;
 }
 
-strong{
-    color: blue;
-}
 
 b{color: red;}
 
@@ -250,7 +248,9 @@ b{color: red;}
     padding: 90px 0 70px;
 }
 
-.con_wrap3{}
+.con_wrap3{
+    overflow: hidden;
+}
 
 .con_wrap3 li{
     width: calc(100% / 3);
@@ -272,4 +272,248 @@ b{color: red;}
     line-height: 1.7;
     font-size: 13px;
     letter-spacing: -1px;
+}
+
+
+/* activity 영역 */
+.activity{
+    padding: 50px 0;
+}
+
+.activity img{
+    width: 100%;
+}
+
+.activity h3{
+    margin: 30px 0;
+}
+
+.activity p{
+    margin-bottom: 20px;
+}
+
+.aticle{
+    overflow: hidden;
+}
+.aticle h3{
+    padding: 10px 0;
+    font-size: 20px;
+}
+.aticle .p_1{
+    border-bottom: 2px solid yellowgreen;
+    padding: 5px 0;
+    font-size: 15px;
+}
+.aticle .p_2{
+    border-bottom: 2px solid yellowgreen;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.aticle p{
+    color: #666;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+
+/* 포트폴리오 영역 */
+.con_inner4{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 90px 0 70px;
+}
+
+.img_list{
+    overflow: hidden;
+}
+
+.img_list li{
+    float: left;
+    width: calc(100% / 4);
+}
+
+.img_list li div{
+    position: relative;
+    /* line-height: 0; */
+    /* 이미 안에 글씨가 없을때 */
+}
+
+.img_list li div a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.img_list li div a:hover{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.img_list li div a span{
+    position: absolute;
+    /* left: calc(50% - 30px);
+    top: calc(50% - 30px); */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 20px 0;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img_list li div a span:hover{
+    color: hotpink;
+    background: rgba(225, 225, 225, 1);
+}
+
+.img_list li div img{
+    width: 100%;
+    display: block;
+}
+
+.img_list li h4{
+    padding-top: 10px;
+
+}
+
+.img_list li h5{
+    padding-bottom: 30px;
+    font-weight: 200;
+}
+
+/* consult 영역 */
+.con_inner5{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 90px 0 70px;
+}
+
+.form_table{
+    width: 100%;
+}
+
+.t_left{
+    font-weight: bold;
+    width: 30%;
+    background-color: #ddd;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form_table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.num1{
+    width: 60px;
+}
+
+.num2{
+    width: 70px;
+}
+
+.num3{width: 200px;}
+
+.text_right{
+    text-align: right;
+}
+
+.txt_pre{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.img_center{
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn input{
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 10px;}
+
+
+
+/* contact 영역 */
+.con_inner6{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    /* padding: 90px 0 70px; */
+    background: url(../images/7-min.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin-top: 50px;
+}
+
+.con_inner6_opa{
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+
+.con_inner6_opa h2{
+    padding: 50px 0 30px;
+}
+
+.con_inner6_opa p{
+    padding: 0 0 20px;
+}
+
+.sns{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sns li{
+    float: left;
+    width: calc(100% / 3);
+}
+
+
+.sns li span{
+    font-size: 12px;
+}
+
+
+#footer{}
+
+.foot_up{
+    background-color: #444;
+    color: white;
+    padding: 50px 0;
+}
+
+.foot_up_inner{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.foot_down{
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+}
+
+.foot_down_inner{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
 }
